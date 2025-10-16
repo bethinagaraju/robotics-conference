@@ -6,7 +6,8 @@ import React from 'react';
 const Footer: React.FC = () => {
   return (
     <section
-      className="relative bg-cover bg-center text-white"
+    id='contact-form'
+      className="relative bg-cover bg-center text-white scroll-mt-48"
       style={{
         backgroundImage: "url('Gemini_Generated_Image_szvxggszvxggszvx(1).png')",
         backdropFilter: "blur(80px)",
@@ -37,7 +38,7 @@ const Footer: React.FC = () => {
               <h2 className="text-2xl font-semibold">Let's keep in touch</h2>
             </div>
             <p className="text-lg text-gray-200 leading-relaxed">
-              Sign up to receive the World Utilities Congress event updates directly to your inbox
+              Sign up to receive the Artificial Intelligence, Machine Learning and Robotics Conference event updates directly to your inbox
               (special highlights, new speaker announcements, list of exhibiting companies, key
               attendees and more)
             </p>

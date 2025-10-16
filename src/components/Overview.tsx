@@ -4,7 +4,7 @@ const Overview = () => {
 
 
   return (
-    <div>
+    <div id="event-overviewsection" className="scroll-mt-48">
           <div className="mt-10">
       <h1
         style={{ fontFamily: "'Manrope', sans-serif", color: '#2e376c' }}

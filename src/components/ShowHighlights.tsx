@@ -98,7 +98,7 @@ const ShowHighlights = () => {
   }, []);
 
   return (
-    <section className="py-16 bg-white">
+    <section id='highlets-section' className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between mb-4">
           {/* <h2 className="text-2xl font-bold text-[#f4aa3d] text-center md:text-4xl md:text-center">

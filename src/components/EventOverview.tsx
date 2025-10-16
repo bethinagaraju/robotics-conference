@@ -8,19 +8,19 @@ const EventOverview = () => {
     {
       id: 1,
       imageUrl: "ilias-photo.png",
-      // quote: "The World Utilities Congress 2024 served as a premier platform for industry leaders to collaborate, innovate, and shape the future of sustainable utilities. The event fostered insightful discussions and strategic partnerships, driving the global transition toward cleaner energy solutions. Hydropower was honored to contribute to these critical conversations and engage with key stakeholders committed to a sustainable future.",
-      quote : "RoboticsWorldSummit.com for the World Summit and Expo on Robotics, AI, and Machine Learning (ROBOTICS-2026), I’ll adapt the provided testimonial to align with this conference, ensuring it reflects the event’s focus on AI, machine learning, and robotics. The original testimonial is about the World Utilities Congress 2024, so I’ll reframe it to fit the context of ROBOTICS-2026, maintaining its tone and intent.",
+      
+      quote: "RoboticsWorldSummit.com for the World Summit and Expo on Robotics, AI, and Machine Learning (ROBOTICS-2026), I am excited to participate in this prestigious event, which brings together global leaders to address the latest advancements and challenges in AI, machine learning, and robotics. I believe this conference offers a unique platform for knowledge sharing, collaboration, and driving innovation in the field of AI and robotics.",
       name: "DR. ROGER ACHKAR",
-      title: "Founder\nGlobal Waste Cleaning Network (GWCN)",
-      companyLogoUrl: "hydropower-1-1.jpg",
+      title: "General Manager\nPath Robotics",
+      companyLogoUrl: "Untitled-path.png",
     },
     {
       id: 2,
       imageUrl: "roger-achkar-photo-mar-2025-crop.jpg",
       quote: "GWCN is proud to support the World Conference on Robotics, AI, and Machine Learning (ROBOTICS-2026), a prestigious event uniting leaders to tackle AI and robotics challenges. At GWCN, we advance technological innovation and believe this conference offers an invaluable platform for knowledge sharing, collaboration, and intelligent automation. We're excited for the impactful discussions and solutions ahead, and look forward to contributing to this transformative dialogue.",
       name: "Dr. Roger Achkar",
-      title: "Founder\nGlobal Waste Cleaning Network (GWCN)",
-      companyLogoUrl: "gwcn1.png",
+      title: "Founder\nkodiak-robotics",
+      companyLogoUrl: "kodik.png",
     },
     // Add more if needed
   ];
@@ -35,7 +35,7 @@ const EventOverview = () => {
   }, [testimonials.length]);
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section id='testimonial-section' className="py-16 bg-gray-50 scroll-mt-40">
       <div className="container mx-auto px-4">
         
         {/* Single testimonial carousel */}

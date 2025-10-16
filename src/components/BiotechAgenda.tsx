@@ -213,6 +213,7 @@
 import React, { useState } from 'react';
 import { User } from 'lucide-react';
 import Header from './Header';
+import { Link } from 'react-router-dom';
 
 // Defines the type for a single event in the schedule
 interface ScheduleItem {
@@ -556,7 +557,7 @@ const BiotechAgenda: React.FC = () => {
 
   return (
     <div>
-      <section className="bg-white py-16 px-4">
+      <section id='agenda-section' className="bg-white py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h1
             style={{ fontFamily: "'Manrope', sans-serif", color: '#2e376c' }}
@@ -598,12 +599,13 @@ const BiotechAgenda: React.FC = () => {
 
           {/* Register Button */}
           <div className="flex justify-center mt-10">
-            <a
-              href="#"
-              className="bg-[#2e366c] hover:bg-[#4967a0] text-white px-6 py-2 font-semibold text-sm transition-colors"
-            >
-              Register Now
-            </a>
+            <Link to="/register">
+              <a
+                className="bg-[#2e366c] hover:bg-[#4967a0] text-white px-6 py-2 font-semibold text-sm transition-colors"
+              >
+                Register Now
+              </a>
+            </Link>
           </div>
         </div>
       </section>

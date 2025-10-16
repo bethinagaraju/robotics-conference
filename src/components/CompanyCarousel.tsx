@@ -51,7 +51,7 @@ const CompanyCarousel = () => {
         {logos.map((logo, index) => (
           <div key={index} className="flex justify-center items-center p-4">
             <div className="bg-white shadow-md p-6 w-40 h-40 flex items-center justify-center">
-              <img src={logo.src} alt={logo.alt} className="object-contain h-full w-full" />
+              <img src={logo.src} alt={logo.alt} className="object-contain h-full w-full lazyload" />
             
             </div>
           </div>

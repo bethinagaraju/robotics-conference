@@ -1,0 +1,3 @@
+- [x] Update WhopRegisterPage.tsx: Remove the payment section, add useNavigate import, modify handleFormSubmit to navigate to '/checkout' with registrationData in state.
+- [x] Update CheckoutPage.tsx: Add useLocation import, retrieve registrationData from state, render the payment section with the data.
+- [ ] Test the navigation and functionality.

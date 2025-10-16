@@ -54,7 +54,7 @@
 
 import React from 'react';
 
-const ImageHoverCard = ({ imageUrl, title, description, buttonText }) => {
+const ImageHoverCard = ({ imageUrl, title, description, buttonText, linkUrl }) => {
   return (
     <div className="relative w-[268px] max-w-xs mx-auto overflow-hidden shadow-lg group h-[390px]">
       {/* Image Container */}
@@ -62,7 +62,7 @@ const ImageHoverCard = ({ imageUrl, title, description, buttonText }) => {
         <img
           src={imageUrl}
           alt={title}
-          className="w-full h-full object-fill object-center transition-transform duration-300 group-hover:scale-105"
+          className="w-full h-full object-fill object-center transition-transform duration-300 group-hover:scale-105 lazyload"
           onError={(e) => {
             e.target.onerror = null;
             e.target.src = "https://placehold.co/600x400/CCCCCC/000000?text=Image+Not+Found";
@@ -91,9 +91,11 @@ const ImageHoverCard = ({ imageUrl, title, description, buttonText }) => {
 
         <h3 className="text-2xl font-bold mb-4 text-black">{title}</h3>
         <p className="text-sm sm:text-base mb-4 leading-relaxed text-white">{description}</p>
-        <button className="bg-black text-white px-4 py-2 rounded-md text-sm sm:text-base font-semibold hover:bg-gray-800 transition">
+
+        <a href={linkUrl} className="bg-black text-white px-4 py-2 rounded-md text-sm sm:text-base font-semibold hover:bg-gray-800 transition">
           {buttonText}
-        </button>
+        </a>
+
       </div>
 
 

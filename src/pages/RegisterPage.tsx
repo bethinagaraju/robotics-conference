@@ -1,6 +1,7 @@
 import React from 'react';
 import ConferenceRegistration from '../components/ConferenceRegistration';
 import Header from '../components/Header';
+import WhopRegisterPage from '../components/WhopRegisterPage';
 // import BiotechAgenda from '../components/BiotechAgenda';
 
 function RegisterPage() {
@@ -8,7 +9,9 @@ function RegisterPage() {
     <div>
         <Header />
       {/* <BiotechAgenda /> */}
-      <ConferenceRegistration />
+      {/* <ConferenceRegistration /> */}
+      <WhopRegisterPage />
+      <RegisterPage />
     </div>
   );
 }

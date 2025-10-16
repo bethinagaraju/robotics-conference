@@ -803,74 +803,133 @@ const AbstractSubmission: React.FC = () => {
     setCaptchaError(false);
   };
 
+  // const handleSubmit = async (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   setCaptchaError(false);
+
+  //   if (formData.securityCode.toLowerCase() !== captchaCode.toLowerCase()) {
+  //     setCaptchaError(true);
+  //     alert('Security verification failed. Please enter the correct code.');
+  //     return;
+  //   }
+
+  //   const form = new FormData();
+  //   form.append("titlePrefix", formData.title);
+  //   form.append("name", formData.fullName);
+  //   form.append("email", formData.emailAddress);
+  //   form.append("phone", formData.phoneNumber);
+  //   form.append("organizationName", formData.organization);
+  //   form.append("country", formData.country);
+  //   form.append("abstractFile", formData.abstractFile as File);
+
+  //   try {
+  //     const response = await fetch("http://zynconfback.theroboticssummit.com/api/form-submission/submit", {
+  //       method: "POST",
+  //       body: form,
+  //       headers: {
+  //         "Origin": "https://nursingmeet2026.com"
+  //       }
+  //     });
+
+  //     if (response.ok) {
+  //       const text = await response.text();
+  //       if (text.includes("Form submitted successfully")) {
+  //         setShowSuccess(true);
+  //       } else {
+  //         alert("Submission failed: " + text);
+  //       }
+  //     } else {
+  //       alert("Submission failed with status " + response.status);
+  //     }
+  //   } catch (err) {
+  //     alert("An error occurred: " + err);
+  //   }
+  // };
+
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setCaptchaError(false);
+  e.preventDefault();
+  setCaptchaError(false);
 
-    if (formData.securityCode.toLowerCase() !== captchaCode.toLowerCase()) {
-      setCaptchaError(true);
-      alert('Security verification failed. Please enter the correct code.');
-      return;
-    }
+  if (formData.securityCode.toLowerCase() !== captchaCode.toLowerCase()) {
+    setCaptchaError(true);
+    alert("Security verification failed. Please enter the correct code.");
+    return;
+  }
 
-    const form = new FormData();
-    form.append("titlePrefix", formData.title);
-    form.append("name", formData.fullName);
-    form.append("email", formData.emailAddress);
-    form.append("phone", formData.phoneNumber);
-    form.append("organizationName", formData.organization);
-    form.append("country", formData.country);
-    form.append("abstractFile", formData.abstractFile as File);
+  if (!formData.abstractFile) {
+    alert("Please upload a file before submitting.");
+    return;
+  }
 
-    try {
-      const response = await fetch("http://zynconfback.theroboticssummit.com/api/form-submission/submit", {
-        method: "POST",
-        body: form,
-        headers: {
-          "Origin": "https://nursingmeet2026.com"
-        }
+  // Prepare FormData for backend
+  const form = new FormData();
+  form.append("title", formData.title);
+  form.append("fullName", formData.fullName);
+  form.append("phoneNumber", formData.phoneNumber);
+  form.append("emailAddress", formData.emailAddress);
+  form.append("organization", formData.organization);
+  form.append("country", formData.country);
+  form.append("document", formData.abstractFile);
+
+  try {
+    const response = await fetch("https://robotics-backend-node.vercel.app/api/abstracts", {
+      method: "POST",
+      body: form,
+    });
+
+    if (response.ok) {
+      const data = await response.json();
+      console.log("✅ Server Response:", data);
+      setShowSuccess(true);
+      setFormData({
+        title: "Dr.",
+        fullName: "",
+        phoneNumber: "",
+        emailAddress: "",
+        organization: "",
+        country: "United States",
+        abstractFile: null,
+        securityCode: "",
       });
-
-      if (response.ok) {
-        const text = await response.text();
-        if (text.includes("Form submitted successfully")) {
-          setShowSuccess(true);
-        } else {
-          alert("Submission failed: " + text);
-        }
-      } else {
-        alert("Submission failed with status " + response.status);
-      }
-    } catch (err) {
-      alert("An error occurred: " + err);
+      setFileName("PDF only (max 25MB)");
+      setCaptchaCode(generateCaptchaCode());
+    } else {
+      const err = await response.text();
+      alert("Submission failed: " + err);
     }
-  };
+  } catch (err) {
+    console.error("❌ Network error:", err);
+    alert("An error occurred while submitting: " + err);
+  }
+};
+
+
 
   return (
     <section className="bg-gray-50 py-16 px-4">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl font-extrabold text-center text-gray-900 mb-4">
+        <h2 className="text-4xl font-extrabold text-center text-[#303b71] mb-4">
           Abstract Submission
         </h2>
         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-          Submit your research abstract for the Renewable Energy Summit 2026.
+          Submit your research abstract for the Artificial Intelligence, Machine Learning, and Robotics Conference 2026.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 text-center">
           <div className="bg-white p-6 rounded-lg shadow-sm">
-            <Award className="mx-auto mb-3" size={32} style={{ color: themeColor }} />
+            <Award className="mx-auto mb-3" size={32} style={{ color: '#344177' }} />
             <h3 className="font-bold text-lg text-gray-800">Abstract Deadline</h3>
             <p className="text-gray-600">March 15, 2026</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-sm">
-            <Bell className="mx-auto mb-3" size={32} style={{ color: themeColor }} />
+            <Bell className="mx-auto mb-3" size={32} style={{ color: '#344177' }} />
             <h3 className="font-bold text-lg text-gray-800">Notification</h3>
             <p className="text-gray-600">March 25, 2026</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-sm">
-            <FileText className="mx-auto mb-3" size={32} style={{ color: themeColor }} />
+            <FileText className="mx-auto mb-3" size={32} style={{ color: '#344177' }} />
             <h3 className="font-bold text-lg text-gray-800">File Format</h3>
-            <p className="text-gray-600">PDF, DOC, DOCX</p>
+            <p className="text-gray-600">PDF</p>
           </div>
         </div>
 
@@ -900,6 +959,7 @@ const AbstractSubmission: React.FC = () => {
                 <input type="text" id="organization" name="organization" value={formData.organization} onChange={handleChange} required className="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-2" style={{'--tw-ring-color': themeColor} as React.CSSProperties}/>
               </div>
               <div>
+                
                 <label htmlFor="country" className="block text-sm font-medium text-gray-700 mb-1">Country <span className="text-red-500">*</span></label>
                 <select id="country" name="country" value={formData.country} onChange={handleChange} required className="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-2" style={{'--tw-ring-color': themeColor} as React.CSSProperties}>
                   <option>United States</option><option>Japan</option><option>Germany</option><option>India</option><option>United Kingdom</option>
@@ -911,7 +971,7 @@ const AbstractSubmission: React.FC = () => {
                   <div className="space-y-1 text-center">
                     <Upload className="mx-auto h-12 w-12 text-gray-400" />
                     <div className="flex text-sm text-gray-600">
-                      <label htmlFor="abstractFile" className="relative cursor-pointer bg-white rounded-md font-medium" style={{ color: themeColor }}>
+                      <label htmlFor="abstractFile" className="relative cursor-pointer bg-white rounded-md font-medium" style={{ color: '#344177' }}>
                         <span>Upload a file</span>
                         <input id="abstractFile" name="abstractFile" type="file" className="sr-only" onChange={handleFileChange} accept=".pdf,.doc,.docx" required />
                       </label>
@@ -931,7 +991,7 @@ const AbstractSubmission: React.FC = () => {
                     <button
                       type="button"
                       onClick={handleRefreshCaptcha}
-                      className="p-3 rounded-md bg-blue-500 hover:bg-blue-600 text-white transition-colors flex-shrink-0"
+                      className="p-3 rounded-md bg-[#344177] hover:bg-[#4c6ca5] text-white transition-colors flex-shrink-0"
                       aria-label="Refresh captcha"
                     >
                       <RotateCw size={20} />
@@ -949,7 +1009,7 @@ const AbstractSubmission: React.FC = () => {
                     maxLength={6}
                     className={`w-full p-3 border rounded-md shadow-sm focus:ring-2 ${captchaError ? 'border-red-500' : 'border-gray-300'}`}
                     placeholder="Enter the code shown above"
-                    style={{'--tw-ring-color': themeColor} as React.CSSProperties}
+                    style={{'--tw-ring-color': '#344177'} as React.CSSProperties}
                   />
                   {captchaError && (
                     <p className="text-red-500 text-sm mt-1">Incorrect code. Please try again.</p>
@@ -962,7 +1022,7 @@ const AbstractSubmission: React.FC = () => {
             </div>
 
             <div className="text-center pt-4">
-              <button type="submit" className="inline-flex items-center justify-center px-8 py-3 text-white font-bold rounded-lg shadow-lg transition-transform transform hover:scale-105" style={{ backgroundColor: themeColor }}>
+              <button type="submit" className="inline-flex items-center justify-center px-8 py-3 text-white font-bold rounded-lg shadow-lg transition-transform transform hover:scale-105" style={{ backgroundColor: '#344177' }}>
                 <FileText size={18} className="mr-2" />
                 Submit Abstract
               </button>

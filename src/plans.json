@@ -1,0 +1,258 @@
+[
+    {
+    "registrationtype": "Registration Only",
+    "presentationtype": "Speaker",
+    "noofnights": 0,
+    "noofguests": 0,
+    "registrationfee": 200.50,
+    "processingfee": 15.00,
+    "totalfee": 215.50,
+    "planid": "plan_hLWCDW2D5cK92"
+  },
+  {
+    "registrationtype": "Registration Only",
+    "presentationtype": "Poster",
+    "noofnights": 0,
+    "noofguests": 0,
+    "registrationfee": 220.00,
+    "processingfee": 16.00,
+    "totalfee": 236.00,
+    "planid": "plan_jfnD3Xi7TnAzV"
+  },
+  {
+    "registrationtype": "Registration Only",
+    "presentationtype": "Listener/Delegate",
+    "noofnights": 0,
+    "noofguests": 0,
+    "registrationfee": 180.75,
+    "processingfee": 13.75,
+    "totalfee": 194.50,
+    "planid": "plan_hLWCDW2D5cK92"
+  },
+  {
+    "registrationtype": "Registration Only",
+    "presentationtype": "Sponsor",
+    "noofnights": 0,
+    "noofguests": 0,
+    "registrationfee": 350.00,
+    "processingfee": 20.00,
+    "totalfee": 370.00,
+    "planid": "plan_jfnD3Xi7TnAzV"
+  },
+  {
+    "registrationtype": "Registration Only",
+    "presentationtype": "Student",
+    "noofnights": 0,
+    "noofguests": 0,
+    "registrationfee": 120.00,
+    "processingfee": 12.00,
+    "totalfee": 132.00,
+    "planid": "plan_hLWCDW2D5cK92"
+  },
+
+
+
+
+  {
+    "registrationtype": "Registration Only",
+    "presentationtype": "Speaker",
+    "noofnights": 1,
+    "noofguests": 1,
+    "registrationfee": 200.50,
+    "processingfee": 15.00,
+    "totalfee": 215.50,
+    "planid": "plan_hLWCDW2D5cK92"
+  },
+  {
+    "registrationtype": "Registration Only",
+    "presentationtype": "Poster",
+    "noofnights": 2,
+    "noofguests": 2,
+    "registrationfee": 220.00,
+    "processingfee": 16.00,
+    "totalfee": 236.00,
+    "planid": "plan_jfnD3Xi7TnAzV"
+  },
+  {
+    "registrationtype": "Registration Only",
+    "presentationtype": "Listener/Delegate",
+    "noofnights": 3,
+    "noofguests": 0,
+    "registrationfee": 180.75,
+    "processingfee": 13.75,
+    "totalfee": 194.50,
+    "planid": "plan_hLWCDW2D5cK92"
+  },
+  {
+    "registrationtype": "Registration Only",
+    "presentationtype": "Sponsor",
+    "noofnights": 1,
+    "noofguests": 4,
+    "registrationfee": 350.00,
+    "processingfee": 20.00,
+    "totalfee": 370.00,
+    "planid": "plan_jfnD3Xi7TnAzV"
+  },
+  {
+    "registrationtype": "Registration Only",
+    "presentationtype": "Student",
+    "noofnights": 2,
+    "noofguests": 1,
+    "registrationfee": 120.00,
+    "processingfee": 12.00,
+    "totalfee": 132.00,
+    "planid": "plan_hLWCDW2D5cK92"
+  },
+  {
+    "registrationtype": "Registration Only",
+    "presentationtype": "Exhibitor",
+    "noofnights": 3,
+    "noofguests": 7,
+    "registrationfee": 400.00,
+    "processingfee": 25.00,
+    "totalfee": 425.00,
+    "planid": "plan_jfnD3Xi7TnAzV"
+  },
+  {
+    "registrationtype": "Registration and Accommodation",
+    "presentationtype": "Speaker",
+    "noofnights": 1,
+    "noofguests": 2,
+    "registrationfee": 250.00,
+    "processingfee": 18.00,
+    "totalfee": 268.00,
+    "planid": "plan_hLWCDW2D5cK92"
+  },
+  {
+    "registrationtype": "Registration and Accommodation",
+    "presentationtype": "Poster",
+    "noofnights": 2,
+    "noofguests": 3,
+    "registrationfee": 270.00,
+    "processingfee": 19.00,
+    "totalfee": 289.00,
+    "planid": "plan_jfnD3Xi7TnAzV"
+  },
+  {
+    "registrationtype": "Registration and Accommodation",
+    "presentationtype": "Listener/Delegate",
+    "noofnights": 3,
+    "noofguests": 5,
+    "registrationfee": 280.00,
+    "processingfee": 20.00,
+    "totalfee": 300.00,
+    "planid": "plan_hLWCDW2D5cK92"
+  },
+  {
+    "registrationtype": "Registration and Accommodation",
+    "presentationtype": "Sponsor",
+    "noofnights": 1,
+    "noofguests": 6,
+    "registrationfee": 360.00,
+    "processingfee": 22.00,
+    "totalfee": 382.00,
+    "planid": "plan_jfnD3Xi7TnAzV"
+  },
+  {
+    "registrationtype": "Registration and Accommodation",
+    "presentationtype": "Student",
+    "noofnights": 2,
+    "noofguests": 8,
+    "registrationfee": 210.00,
+    "processingfee": 17.50,
+    "totalfee": 227.50,
+    "planid": "plan_hLWCDW2D5cK92"
+  },
+  {
+    "registrationtype": "Registration and Accommodation",
+    "presentationtype": "Exhibitor",
+    "noofnights": 3,
+    "noofguests": 3,
+    "registrationfee": 410.00,
+    "processingfee": 28.00,
+    "totalfee": 438.00,
+    "planid": "plan_jfnD3Xi7TnAzV"
+  },
+  {
+    "registrationtype": "Registration Only",
+    "presentationtype": "Listener/Delegate",
+    "noofnights": 1,
+    "noofguests": 10,
+    "registrationfee": 225.00,
+    "processingfee": 16.00,
+    "totalfee": 241.00,
+    "planid": "PLAN-RL110"
+  },
+  {
+    "registrationtype": "Registration Only",
+    "presentationtype": "Sponsor",
+    "noofnights": 3,
+    "noofguests": 1,
+    "registrationfee": 370.00,
+    "processingfee": 21.00,
+    "totalfee": 391.00,
+    "planid": "PLAN-RS31"
+  },
+  {
+    "registrationtype": "Registration Only",
+    "presentationtype": "Speaker",
+    "noofnights": 2,
+    "noofguests": 5,
+    "registrationfee": 255.00,
+    "processingfee": 15.00,
+    "totalfee": 270.00,
+    "planid": "PLAN-RS25"
+  },
+  {
+    "registrationtype": "Registration and Accommodation",
+    "presentationtype": "Speaker",
+    "noofnights": 3,
+    "noofguests": 2,
+    "registrationfee": 260.00,
+    "processingfee": 17.00,
+    "totalfee": 277.00,
+    "planid": "PLAN-AS32"
+  },
+  {
+    "registrationtype": "Registration and Accommodation",
+    "presentationtype": "Poster",
+    "noofnights": 1,
+    "noofguests": 0,
+    "registrationfee": 240.00,
+    "processingfee": 18.00,
+    "totalfee": 258.00,
+    "planid": "PLAN-AP10"
+  },
+  {
+    "registrationtype": "Registration and Accommodation",
+    "presentationtype": "Exhibitor",
+    "noofnights": 1,
+    "noofguests": 1,
+    "registrationfee": 420.00,
+    "processingfee": 29.00,
+    "totalfee": 449.00,
+    "planid": "PLAN-AE11"
+  },
+  {
+    "registrationtype": "Registration and Accommodation",
+    "presentationtype": "Student",
+    "noofnights": 3,
+    "noofguests": 4,
+    "registrationfee": 215.00,
+    "processingfee": 13.00,
+    "totalfee": 228.00,
+    "planid": "PLAN-AS34"
+  },
+  {
+    "registrationtype": "Registration Only",
+    "presentationtype": "Poster",
+    "noofnights": 2,
+    "noofguests": 8,
+    "registrationfee": 270.00,
+    "processingfee": 21.00,
+    "totalfee": 291.00,
+    "planid": "PLAN-RP28"
+  }
+]
+
+

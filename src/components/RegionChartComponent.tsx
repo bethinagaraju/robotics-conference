@@ -422,7 +422,7 @@ const RegionChart = () => (
     {/* Middle East */}
     <div className="w-1/4 bg-[#242559] text-white flex flex-col">
       <h2 className="text-xl md:text-4xl font-bold ml-4 mt-4">30%</h2>
-      <p className="text-sm md:text-lg ml-4">Middle East</p>
+      <p className="text-sm md:text-lg ml-4">Europe</p>
     </div>
     {/* Asia */}
     <div className="w-1/4 bg-[#37477d] text-white flex flex-col">
@@ -434,7 +434,7 @@ const RegionChart = () => (
       {/* Europe text with transparent black backdrop for visibility */}
       <div className="absolute top-4 left-4 z-10 px-3 py-1">
         <h2 className="text-xl md:text-4xl font-bold text-white">22%</h2>
-        <p className="text-sm md:text-lg text-white">Europe</p>
+        <p className="text-sm md:text-lg text-white">Middle East</p>
       </div>
       {/* USA block */}
       <div className="absolute bottom-0 right-0 w-[68%] h-[68%] bg-[#3e548b] flex flex-col rounded-b-xl pl-4 pt-4 z-0">
@@ -461,7 +461,7 @@ const JobLevelChart = () => (
       <div className="flex items-end gap-3">
         <span className="text-4xl md:text-[56px] font-semibold leading-tight text-black">72%</span>
         <div className="flex flex-col pb-2">
-          <div className="text-xs md:text-base text-black">C-Level / Director / VP / Founder</div>
+          <div className="text-xs md:text-base text-black">Professor / PhD /Doctor / Academic</div>
         </div>
       </div>
     </div>
@@ -475,7 +475,7 @@ const JobLevelChart = () => (
     </div>
     <div className="bg-[#e2f7f2] px-3 md:px-6 py-4 md:py-5 border-t border-[#f4f4f4] w-full">
       <div className="font-semibold text-lg md:text-xl text-black">4.0%</div>
-      <div className="text-xs md:text-base text-black">Professor / PhD /Doctor / Academic</div>
+      <div className="text-xs md:text-base text-black">C-Level / Director / VP / Founder</div>
     </div>
     <div className="bg-[#fafefd] px-3 md:px-6 py-4 md:py-5 border-t border-[#f4f4f4] w-full">
       <div className="font-semibold text-lg md:text-xl text-black">4.0%</div>
@@ -511,14 +511,14 @@ const CompanySizeChart = () => (
   </div>
 );
 
-// --- SectorChart Component ---
+// --- SectorChart Component ---Academics
 const sectors = [
-  { label: "Enterprises/Corporates", percent: 38 },
+  { label: "Academics", percent: 38 },
   { label: "Technology", percent: 26 },
   { label: "Startups", percent: 9 },
   { label: "Government & Public sector", percent: 8 },
   { label: "Investors, Advisory & Consulting", percent: 5 },
-  { label: "Academics", percent: 4 },
+  { label: "Enterprises/Corporates", percent: 4 },
   { label: "Others (Associations, Media, Independent Developers)", percent: 2 }
 ];
 
@@ -556,7 +556,8 @@ function Dashboard() {
         style={{ fontFamily: "'Manrope', sans-serif", color: '#2e376c' }}
         className="text-center text-2xl md:text-3xl font-bold mb-4"
       >
-        WHO'S PRACTICING THE CONFERENCE, 2026
+        {/* WHO'S PRACTICING THE CONFERENCE, 2026 */}
+        WHO'S PARTICIPATING THE CONFERENCE, 2026
       </h1>
       {/* Top Row */}
       <div className="flex flex-col md:flex-row gap-5 md:gap-8">

@@ -113,6 +113,7 @@ const PartnerLogos: React.FC = () => {
                 src={partner.logo}
                 alt={partner.alt}
                 className="max-h-20 object-contain"
+                loading="lazy"
               />
             </div>
           ))}

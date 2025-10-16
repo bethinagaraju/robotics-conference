@@ -1,183 +1,3 @@
-// import React from 'react';
-// import {
-//   FaFacebookF,
-//   FaLinkedinIn,
-//   FaInstagram,
-//   FaYoutube,
-// //   FaXTwitter,
-//   FaThumbsUp,
-//   FaCalendarAlt,
-//   FaLink,
-//   FaAt,
-// } from 'react-icons/fa';
-// import { FaCookieBite } from "react-icons/fa6";
-// // import FaXTwitter from 'react-icons/fa';
-
-
-// const EndFooter: React.FC = () => {
-//   return (
-//     <footer className="bg-gray-100 text-[#002d45] text-sm">
-
-
-//       {/* Top section */}
-//       <div className="container mx-auto px-16 py-10 grid grid-cols-1 md:grid-cols-4 gap-8 border-b border-gray-300">
-//         {/* Opening Times */}
-//         <div>
-//           <h3 className="flex items-center gap-2 text-teal-500 font-semibold text-lg mb-4">
-//             <FaCalendarAlt /> OPENING TIMES
-//           </h3>
-//           <ul className="mb-4 space-y-2">
-//             <li><strong>Tuesday 19 May 2026:</strong> 09:30 – 17:00</li>
-//             <li><strong>Wednesday 20 May 2026:</strong> 10:00 – 17:00</li>
-//             <li><strong>Thursday 21 May 2026:</strong> 10:00 – 17:00</li>
-//           </ul>
-//           <button className="bg-[#0a1437] text-white py-2 px-4 rounded">ADD TO CALENDAR</button>
-//         </div>
-
-//         {/* Quick Links */}
-//         <div>
-//           <h3 className="flex items-center gap-2 text-teal-500 font-semibold text-lg mb-4">
-//             <FaLink /> QUICK LINKS
-//           </h3>
-//           <ul className="space-y-2 underline underline-offset-2">
-//             <li>Book a Stand</li>
-//             <li>Become a Sponsor</li>
-//             <li>Visitor Registration</li>
-//           </ul>
-//           <h3 className="flex items-center gap-2 text-teal-500 font-semibold text-lg mt-6 mb-2">
-//             <FaThumbsUp /> FOLLOW US
-//           </h3>
-//           <div className="flex items-center space-x-4 text-2xl mt-2">
-//             <FaFacebookF />
-//             {/* <FaXTwitter /> */}
-//             <FaLinkedinIn />
-//             <FaYoutube />
-//             <FaInstagram />
-//           </div>
-//         </div>
-
-//         {/* Contact Us */}
-//         <div className="md:col-span-2">
-//           <h3 className="flex items-center gap-2 text-teal-500 font-semibold text-lg mb-4">
-//             <FaAt /> CONTACT US
-//           </h3>
-//           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-//             <div>
-//               <p><strong>General Enquiry</strong></p>
-//               <p>enquiries@worldutilitiescongress.com</p>
-//             </div>
-//             <div>
-//               <p><strong>Marketing Enquiry</strong></p>
-//               <p>marketing@worldutilitiescongress.com</p>
-//             </div>
-//             <div>
-//               <p><strong>Sales Enquiry</strong></p>
-//               <p>sales@worldutilitiescongress.com</p>
-//             </div>
-//             <div>
-//               <p><strong>Sponsorship Enquiry</strong></p>
-//               <p>sponsorship@worldutilitiescongress.com</p>
-//             </div>
-//             <div>
-//               <p><strong>Conference Enquiry</strong></p>
-//               <p>conferences@worldutilitiescongress.com</p>
-//             </div>
-//             <div>
-//               <p><strong>Delegate Enquiry</strong></p>
-//               <p>delegate@worldutilitiescongress.com</p>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-
-//       {/* Bottom section */}
-
-//       {/* <div className="bg-[#4c5d6c] text-white px-4 py-6">
-//         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-//           <img src="/logo-footer.png" alt="dmg events" className="h-10" />
-
-//           <ul className="flex flex-wrap gap-4 text-sm text-white/90">
-//             <li>ABOUT US</li>
-//             <li>CAREERS</li>
-//             <li>PRIVACY POLICY</li>
-//             <li>COOKIE POLICY</li>
-//             <li>COOKIES SETTINGS</li>
-//             <li>CONTACT US</li>
-//           </ul>
-//         </div>
-
-//         <hr className="my-4 border-white/30" />
-
-//         <div className="container mx-auto text-center text-sm text-white/80">
-//           dmg events is an international exhibition and conference organiser, publisher and
-//           information provider to the Energy, Construction, Plastics, Coatings, Manufacturing,
-//           Transport, Security, Interiors and Hospitality industries.
-//         </div>
-//       </div> */}
-
-
-//       <div className="bg-[#4c5d6c] text-white px-4 pt-10 pb-6 relative">
-//       <div className="container mx-auto flex flex-col items-center gap-6">
-//         {/* Logo */}
-//         <img src="/logo-footer.png" alt="dmg events" className="h-8 md:h-10" />
-
-//         {/* Social Icons */}
-//         <div className="flex gap-4">
-//           <a href="#" className="bg-white text-[#4c5d6c] p-2 rounded-full">
-//             <FaLinkedinIn />
-//           </a>
-//           <a href="#" className="bg-white text-[#4c5d6c] p-2 rounded-full">
-//             <FaFacebookF />
-//           </a>
-//           <a href="#" className="bg-white text-[#4c5d6c] p-2 rounded-full">
-//             {/* <FaXTwitter /> */}
-//           </a>
-//         </div>
-
-//         {/* Navigation */}
-//         <ul className="flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm text-white/90 border-t border-white/40 border-b py-3 w-full max-w-4xl">
-//           <li>ABOUT US</li>
-//           <li>CAREERS</li>
-//           <li>PRIVACY POLICY</li>
-//           <li>COOKIE POLICY</li>
-//           <li>COOKIES SETTINGS</li>
-//           <li>CONTACT US</li>
-//         </ul>
-
-//         {/* Members row */}
-//         <div className="flex items-center gap-4 justify-center text-sm mt-2">
-//           <span className="text-white/80 font-light">MEMBER OF</span>
-//           <img src="/ufi.png" alt="ufi" className="h-6" />
-//           <img src="/siso.png" alt="siso" className="h-6" />
-//           <img src="/aeo.png" alt="aeo" className="h-6" />
-//           <img src="/asso.png" alt="association" className="h-6" />
-//         </div>
-
-//         {/* Description */}
-//         <div className="text-center text-sm text-white/80 max-w-3xl mt-4">
-//           dmg events is an international exhibition and conference organiser, publisher and
-//           information provider to the Energy, Construction, Plastics, Coatings, Manufacturing,
-//           Transport, Security, Interiors and Hospitality industries.
-//         </div>
-//       </div>
-
-//       {/* Cookie Icon */}
-//       <div className="fixed bottom-4 left-4 z-50">
-//         <FaCookieBite className="w-12 h-12 text-black" />
-//       </div>
-//     </div>
-
-//     </footer>
-//   );
-// };
-
-// export default EndFooter;
-
-
-
-
-
-
 
 import React, { useState } from 'react';
 import {
@@ -193,9 +13,16 @@ import {
 import { FaCookieBite } from 'react-icons/fa6';
 import { Sidebar } from 'primereact/sidebar';
 import { Button } from 'primereact/button';
+import { Link } from 'react-router-dom';
 
 const EndFooter: React.FC = () => {
   const [visibleLeft, setVisibleLeft] = useState(false); // Sidebar state
+
+        const googleCalUrl = "https://calendar.google.com/calendar/render?action=TEMPLATE" +
+  "&text=AI+ML+%26+Robotics+Conference+2026" +
+  "&dates=20260728T090000Z/20260730T170000Z" +
+  "&details=International+Conference+on+AI,+ML+and+Robotics+in+Rome,+Italy" +
+  "&location=Crowne+Plaza+-+St.+Peter's+Rome,+Italy";
 
   return (
     <footer className="bg-gray-100 text-[#002d45] text-sm">
@@ -283,80 +110,82 @@ const EndFooter: React.FC = () => {
   
 
       {/* Top section */}
+
+
       <div className="container mx-auto px-16 py-10 grid grid-cols-1 md:grid-cols-4 gap-8 border-b border-gray-300">
-        {/* Opening Times */}
-        <div>
-          <h3 className="flex items-center gap-2 text-[#2e376d] font-semibold text-lg mb-4">
-            <FaCalendarAlt /> OPENING TIMES
-          </h3>
-          <ul className="mb-4 space-y-2">
-            <li><strong>Wednesday 28 July 2026:</strong> 09:30 – 17:00</li>
-            <li><strong>Thursday 29 July 2026:</strong> 10:00 – 17:00</li>
-            <li><strong>Friday 30 July 2026:</strong> 10:00 – 17:00</li>
-          </ul>
-          <button className="bg-[#3f558d] text-white py-2 px-4 rounded">ADD TO CALENDAR</button>
-        </div>
+  {/* Opening Times */}
+  <div>
+    <h3 className="flex items-center gap-2 text-[#2e376d] font-semibold text-lg mb-4">
+      <FaCalendarAlt /> OPENING TIMES
+    </h3>
+    <ul className="mb-4 space-y-2">
+      <li><strong>Wednesday 28 July 2026:</strong> 08:00 – 16:00</li>
+      <li><strong>Thursday 29 July 2026:</strong> 08:30 – 16:00</li>
+      <li><strong>Friday 30 July 2026:</strong> 09:00 – 16:00</li>
+    </ul>
 
-        {/* Quick Links */}
-        <div>
+    <button
+      className="bg-[#3f558d] text-white py-2 px-4"
+      onClick={() => window.open(googleCalUrl, "_blank")}
+    >
+      ADD TO CALENDAR
+    </button>
+  </div>
 
-          <h3 className="flex items-center gap-2 text-[#2e376d] font-semibold text-lg mb-4">
-            <FaLink /> QUICK LINKS
-          </h3>
+  {/* Quick Links */}
+  <div>
+    <h3 className="flex items-center gap-2 text-[#2e376d] font-semibold text-lg mb-4">
+      <FaLink /> QUICK LINKS
+    </h3>
 
-          <ul className="space-y-2 underline underline-offset-2">
-            <li>Book a Stand</li>
-            <li>Become a Sponsor</li>
-            <li>Visitor Registration</li>
-          </ul>
+    <ul className="space-y-2 underline underline-offset-2">
+      <li>
+        <Link to="/register">Register</Link>
+      </li>
+      <li>
+        <Link to="/AbstractSubmission">Abstract Submission</Link>
+      </li>
+      <li><a href="/#contact-form">Become a Sponsor</a></li>
+    </ul>
+  </div>
 
-          <h3 className="flex items-center gap-2 text-[#2e376d] font-semibold text-lg mt-6 mb-2">
-            <FaThumbsUp /> FOLLOW US
-          </h3>
+  {/* Contact Us */}
+  <div>
+    <h3 className="flex items-center gap-2 text-[#2e376d] font-semibold text-lg mb-4">
+      <FaAt /> CONTACT US
+    </h3>
 
-          <div className="flex items-center space-x-4 text-2xl mt-2">
-            <FaFacebookF />
-            <FaLinkedinIn />
-            <FaYoutube />
-            <FaInstagram />
-          </div>
-        </div>
-
-        {/* Contact Us */}
-        <div className="md:col-span-2">
-
-          <h3 className="flex items-center gap-2 text-[#2e376d] font-semibold text-lg mb-4">
-            <FaAt /> CONTACT US
-          </h3>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div>
-              <p><strong>General Enquiry</strong></p>
-              <p>secretary@theroboticssummit.com</p>
-            </div>
-            <div>
-              <p><strong>Marketing Enquiry</strong></p>
-              <p>marketing@theroboticssummit.com</p>
-            </div>
-            <div>
-              <p><strong>Sales Enquiry</strong></p>
-              <p>sales@theroboticssummit.com</p>
-            </div>
-            <div>
-              <p><strong>Sponsorship Enquiry</strong></p>
-              <p>sponsorship@theroboticssummit.com</p>
-            </div>
-            <div>
-              <p><strong>Conference Enquiry</strong></p>
-              <p>conferences@theroboticssummit.com</p>
-            </div>
-            <div>
-              <p><strong>Delegate Enquiry</strong></p>
-              <p>delegate@theroboticssummit.com</p>
-            </div>
-          </div>
-        </div>
+    <div className="space-y-3">
+      <div>
+        <p><strong>General Enquiry</strong></p>
+        <p>secretary@theroboticssummit.com</p>
       </div>
+      <div>
+        <p><strong>Marketing Enquiry</strong></p>
+        <p>sponsorship@theroboticssummit.com</p>
+      </div>
+      <div>
+        <p><strong>Sales Enquiry</strong></p>
+        <p>Delegate@theroboticssummit.com</p>
+      </div>
+    </div>
+  </div>
+
+  {/* Follow Us (moved here to the empty space) */}
+  <div className="flex flex-col items-start">
+    <h3 className="flex items-center gap-2 text-[#2e376d] font-semibold text-lg mb-4">
+      <FaThumbsUp /> FOLLOW US
+    </h3>
+
+    <div className="flex items-center space-x-4 text-2xl mt-2">
+      <a href="#" aria-label="Facebook"><FaFacebookF /></a>
+      <a href="#" aria-label="LinkedIn"><FaLinkedinIn /></a>
+      <a href="#" aria-label="YouTube"><FaYoutube /></a>
+      <a href="#" aria-label="Instagram"><FaInstagram /></a>
+    </div>
+  </div>
+</div>
+
 
       {/* Bottom section */}
       <div className="bg-[#4c5d6c] text-white px-4 pt-10 pb-6 relative">
@@ -372,12 +201,13 @@ const EndFooter: React.FC = () => {
 
 
 
-            <li>ABOUT US</li>
-            <li>CAREERS</li>
-            <li>PRIVACY POLICY</li>
-            <li>COOKIE POLICY</li>
-            <li>COOKIES SETTINGS</li>
-            <li>CONTACT US</li>
+            {/* <li>ABOUT US</li>
+            <li>CAREERS</li> */}
+            <li><Link to="/privacy-policy">PRIVACY POLICY</Link></li>
+            <li><Link to="/cookie-policy">COOKIE POLICY</Link></li>
+            {/* <li>COOKIES SETTINGS</li> */}
+            <li><Link to="/terms-and-conditions">TERMS AND CONDITIONS</Link></li>
+            {/* <li>CONTACT US</li> */}
 
 
           
@@ -385,15 +215,9 @@ const EndFooter: React.FC = () => {
 
           </ul>
 
-          <span>All rights reserved by Ai Ml Robotics conference</span>
+          <span>© 2026 All rights reserved. AI, ML & Robotics Conference</span>
 
-          
-
-          {/* <div className="text-center text-base text-white/80 max-w-3xl mt-4">
-            An international exhibition and conference organiser, publisher and
-            information provider to the Energy, Construction, Plastics, Coatings, Manufacturing,
-            Transport, Security, Interiors and Hospitality industries.
-          </div> */}
+        
         </div>
 
         {/* 🍪 Cookie Icon */}

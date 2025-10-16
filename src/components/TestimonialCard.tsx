@@ -79,9 +79,9 @@ const TestimonialCard = ({ imageUrl, quote, name, title, companyLogoUrl }) => {
       {/* Content */}
       <div className="bg-white flex-1 p-4 md:p-6 relative border-t-8 border-[#313d73] md:mt-0">
         {/* Quote mark */}
-        <div className="absolute -top-4 left-4 md:-top-6 md:left-6 bg-teal-500 text-white text-3xl md:text-4xl font-bold rounded-full w-8 h-8 md:w-10 md:h-10 flex items-center justify-center">
+        {/* <div className="absolute -top-4 left-4 md:-top-6 md:left-6 bg-teal-500 text-white text-3xl md:text-4xl font-bold rounded-full w-8 h-8 md:w-10 md:h-10 flex items-center justify-center">
           “
-        </div>
+        </div> */}
 
         <p className="text-gray-700 text-base md:text-lg leading-relaxed font-sans-serif">{quote}</p>
 
